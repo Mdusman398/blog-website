@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="media.css">
+  <style>
+    .input-field{
+        margin-top: 50px;
+    }
+    .input-field p {
+        margin-left: 20px;
+    }
+    h2 span{
+        color: blueviolet;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+   
+    <div class="right">
+      <h1>Login</h1>
+    
+      <form>
+        <div class="input-field">
+        <input type="email" placeholder="Email"  id="email" required>
+        <input type="password" placeholder="Enter your password" id="password" required>
+          <p>Don't have an account? <a href="index.html">Sign up</a></p>
+        </div>
+        <button type="submit" class="submit-btn" onclick="loginfnc()">Login</button>
+         <div class="social-icons">
+
+         </div>
+      </form>
+    </div>
+
+     <div class="left">
+      <img src="./purple shade img.jpeg" alt="Background">
+      <div class="overlay-text">
+        <h2>WELLCOME <br>BACK To <span>USMAN</span> BLOG WEBSITE</h2>
+      </div>
+      <!-- <button class="back-btn">Back to website →</button> -->
+    </div>
+  </div>
+
+
+
+  <script src="app.js"></script>
+</body>
+</html>

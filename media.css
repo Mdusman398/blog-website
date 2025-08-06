@@ -1,0 +1,32 @@
+@media (min-width: 300px) and (max-width:750px){
+
+    /* .container{
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    } */
+    .left {
+        display: none;
+    }
+    .left h2{
+        display: flex;
+        position: absolute;
+        /* left: 100px; */
+    }
+    .right{
+        width: 100%;
+        background-image: url('./purple\ shade\ img.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .input-field p a{
+        color: rgb(131, 177, 236) !important; 
+    }
+}
+
+@media (min-width: 750px) and (max-width:1080px){
+    .left{
+        display: inline-block;
+    }
+
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Blog</title>
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+  <header class="navbar">
+    <h1 class="logo">BIOGS</h1>
+    <div class="nav-right">
+      <button class="signout" ><a href="./login.html">Sign Out</a></button>
+    </div>
+  </header>
+
+  <main class="main-section">
+    <button class="create-btn" onclick="opendiv()">Create Blog</button>
+
+    <div class="blog-post">
+      <h2 class="blog-title">Web Development</h2>
+      <p class="blog-content">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, adipisci voluptate.
+        Aut magni explicabo fugiat vitae veniam dignissimos architecto consectetur, autem amet 
+        laborum, soluta iure nemo, assumenda facilis. Numquam, totam!
+      </p>
+      <div class="blog-info">
+        <span class="author">Muhammad Usman Senior web Developer</span>
+        <span class="date">12-2-2025</span>
+      </div>
+      <img src="./download (1).jpeg" alt="Blog Image" class="blog-img">
+    </div>
+
+
+
+
+    <!-- Create Blog Modal Box (Initially Hidden) -->
+
+    <div class="blog-container" id="blog-container">
+
+   
+<div class="create-blog-box" id="createBox">
+  <div class="create-box-header">
+    <h2>Create Blog</h2>
+    <span class="close-btn" onclick="hideBox()">x</span>
+  </div>
+
+  <input type="text" placeholder="Blog Title" class="create-input">
+  <textarea placeholder="Blog Content" class="create-input content-box"></textarea>
+  <input type="text" placeholder="Author Name" class="create-input">
+  <input type="file" class="create-input file-input">
+
+  <button class="create-confirm-btn">Create</button>
+</div>
+ </div>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
