@@ -22,7 +22,7 @@ function signupfnc() {
     users.push(user);
     localStorage.setItem("usersdata", JSON.stringify(users));
 
-    window.location.href= "home.html";
+    window.location.href= "login.html";
     alert("Signup successful");
   } else {
     alert("Please fill all fields");
