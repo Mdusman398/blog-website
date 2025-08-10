@@ -82,7 +82,7 @@ header{
   background-color: #8754ec;
 }
 
-.blog-post {
+.blogPost {
   background-color: #2b2b3c;
   padding: 30px;
   border-radius: 10px;
@@ -96,6 +96,14 @@ header{
   color: #bb86fc;
   margin-bottom: 20px;
 }
+ h2{
+  text-align: center;
+}
+p{
+  text-align: center;
+}
+
+
 
 .blog-content {
   font-size: 16px;
@@ -110,6 +118,24 @@ header{
   font-size: 14px;
   color: #a78bfa;
   margin-bottom: 20px;
+}
+.author{
+   font-size: 14px;
+  color: #a78bfa;
+  display: flex;
+  justify-content: space-between;
+   margin-bottom: 20px;
+
+}
+.date{
+  font-size: 14px;
+  color: #a78bfa;
+  text-align: right;
+  /* width: 80%; */
+
+  display: flex;
+  justify-content: right;
+
 }
 
 .blog-img {
@@ -187,8 +213,16 @@ header{
 }
 
 .content-box {
+   width: 100%; /* parent ke andar fit ho jayega */
+  max-width: 600px; /* optional: blog card ka max width jaisa */
+  min-height: 150px; /* upar se neeche ka size fix karega */
+  resize: vertical; /* sirf height change ho sake */
+  padding: 10px;
   height: 100px;
   resize: none;
+}
+#dateInp{
+  cursor: pointer;
 }
 
 .file-input {

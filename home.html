@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="home.css">
 </head>
 <body>
+  <div class="main">
   <header class="navbar">
     <h1 class="logo">BIOGS</h1>
     <div class="nav-right">
@@ -16,18 +17,18 @@
   <main class="main-section">
     <button class="create-btn" onclick="opendiv()">Create Blog</button>
 
-    <div class="blog-post">
-      <h2 class="blog-title">Web Development</h2>
-      <p class="blog-content">
+    <div class="blogPost" id="blogSec  ">
+      <h2 class="blog-title" id="blogTitle">Web Development</h2>
+      <p class="blog-content" id="blogContent">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, adipisci voluptate.
         Aut magni explicabo fugiat vitae veniam dignissimos architecto consectetur, autem amet 
         laborum, soluta iure nemo, assumenda facilis. Numquam, totam!
       </p>
       <div class="blog-info">
-        <span class="author">Muhammad Usman Senior web Developer</span>
-        <span class="date">12-2-2025</span>
+        <span class="author" id="author">Muhammad Usman</span>
+        <span class="date" id="currentDate">2025-9-08</span>
       </div>
-      <img src="./download (1).jpeg" alt="Blog Image" class="blog-img">
+      <!-- <img src="./download (1).jpeg" alt="Blog Image" class="blog-img"> -->
     </div>
 
 
@@ -44,16 +45,20 @@
     <span class="close-btn" onclick="hideBox()">x</span>
   </div>
 
-  <input type="text" placeholder="Blog Title" class="create-input">
-  <textarea placeholder="Blog Content" class="create-input content-box"></textarea>
-  <input type="text" placeholder="Author Name" class="create-input">
-  <input type="file" class="create-input file-input">
+  <input type="text" placeholder="Blog Title" class="create-input" id="titleInp">
+  <textarea placeholder="Blog Content" class="create-input content-box" id="contentInp"></textarea>
+  <input type="text" placeholder="Author Name" class="create-input" id="nameInp">
+  <!-- <input type="file" class="create-input file-input"> -->
+   <input type="date" class="create-input date-input" id="dateInp" name="date">
 
-  <button class="create-confirm-btn">Create</button>
+
+  <button class="create-confirm-btn" id="createBlog" onclick="createBlog()">post</button>
 </div>
  </div>
 
   </main>
+
+  </div>
 
   <script src="app.js"></script>
 </body>
