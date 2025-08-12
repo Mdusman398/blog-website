@@ -1,10 +1,23 @@
 @media (min-width: 300px) and (max-width:750px){
 
-    /* .container{
-       flex-direction: column;
-       justify-content: center;
-       align-items: center;
-    } */
+  .container{
+    width: 85%;
+    height: 550px;
+  }
+  .container h1{
+    font-size: 35px;
+  }
+  .container button{
+    margin-right: 100px;
+
+
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+  }
     .left {
         display: none;
     }
@@ -30,4 +43,56 @@
         display: inline-block;
     }
 
+}
+
+
+/* home page responsive design  */
+
+
+@media screen and (min-width: 300px) and (max-width:750px){
+
+    header{
+        height: 80px;
+    }
+    .logo{
+        font-size: 25px;
+    }
+    .signout{
+        width: 100%;
+        font-size: 100%;
+        font-weight: 700;
+        border-width: 0px ;
+    }
+    .create-btn {
+        width: 50%;
+        font-size: 100%;
+        font-weight: 700;
+    }
+    .blogPost{
+        width: 90%;
+
+    }
+    .blogPost .blog-title{
+        font-size: 100%;
+        font-weight: bold;
+    }
+    .blogPost .blog-content{
+        font-size: 90%;
+        font-weight: 500;
+    }
+    .blogPost .blog-info{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .blogPost .author{
+        font-size: 100%;
+        font-weight: 500;
+    }
+    .blogPost .date{
+        font-size: 100%;
+        font-weight: 400;
+    }
+    .create-blog-box{
+        width: 85%;
+    }
 }

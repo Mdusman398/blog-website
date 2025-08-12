@@ -6,16 +6,16 @@
 }
 
 body {
-    background-color: #1e1e2f;
+  background-color: #1e1e2f;
   color: #e0e0e0;
 }
-header{
-    width: 100%;
-      height: 70px;;
+header {
+  width: 100%;
+  height: 70px;
 }
 
 .navbar {
- background-color: #2b2b3c;
+  background-color: #2b2b3c;
 
   color: white;
   display: flex;
@@ -28,6 +28,7 @@ header{
 .logo {
   font-size: 28px;
   font-weight: bold;
+  color: white;
 }
 
 .nav-right {
@@ -35,37 +36,42 @@ header{
   gap: 10px;
 }
 
-
 .signout {
-    height: 40px;
-    width: 100%;
+  height: 40px;
+  width: 100%;
   padding: 8px 12px;
- 
+
   border: none;
   border-radius: 35%;
-  background-color:  #440d77;
+  background-color: #440d77;
   color: white;
   cursor: pointer;
   transition: 0.3s all;
 }
-.signout a{
-    color: white;
-     font-size: 17px;
+.signout a {
+  color: white;
+  font-size: 17px;
   font-weight: 500;
   text-decoration: none;
-
 }
 
-
 .signout:hover {
-  background-color: #8754ec;}
+  background-color: #8754ec;
+}
 
 .main-section {
   padding: 40px 20px;
   text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .create-btn {
+  width: 20%;
+
   background-color: #440d77;
   border: none;
   padding: 12px 24px;
@@ -75,7 +81,7 @@ header{
   cursor: pointer;
   margin-bottom: 40px;
   border-width: 0px;
-  transition:  0.3s all;
+  transition: 0.3s all;
 }
 
 .create-btn:hover {
@@ -83,6 +89,7 @@ header{
 }
 
 .blogPost {
+  margin-top: 20%;
   background-color: #2b2b3c;
   padding: 30px;
   border-radius: 10px;
@@ -90,20 +97,21 @@ header{
   margin: auto;
   box-shadow: 0px 0px 10px rgba(80, 20, 120, 0.3);
 }
+.blogPost {
+  margin-bottom: 40px; /* space after each blog */
+}
 
 .blog-title {
   font-size: 28px;
   color: #bb86fc;
   margin-bottom: 20px;
 }
- h2{
+h2 {
   text-align: center;
 }
-p{
+p {
   text-align: center;
 }
-
-
 
 .blog-content {
   font-size: 16px;
@@ -119,15 +127,14 @@ p{
   color: #a78bfa;
   margin-bottom: 20px;
 }
-.author{
-   font-size: 14px;
+.author {
+  font-size: 14px;
   color: #a78bfa;
   display: flex;
   justify-content: space-between;
-   margin-bottom: 20px;
-
+  margin-bottom: 20px;
 }
-.date{
+.date {
   font-size: 14px;
   color: #a78bfa;
   text-align: right;
@@ -135,7 +142,6 @@ p{
 
   display: flex;
   justify-content: right;
-
 }
 
 .blog-img {
@@ -144,20 +150,18 @@ p{
   border: 2px solid #3f3d56;
 }
 
-
-
 /* create blog section */
 
- .blog-container{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    background-color: rgba(58, 50, 85, 0.8);
-    overflow: hidden;
-    display: none;
- }
+.blog-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(58, 50, 85, 0.8);
+  overflow: hidden;
+  display: none;
+}
 .create-blog-box {
   position: absolute;
   top: 350px;
@@ -171,7 +175,7 @@ p{
   height: 500px;
   max-width: 500px;
   display: none;
-   flex-direction: column; 
+  flex-direction: column;
   z-index: 1000;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
@@ -179,7 +183,7 @@ p{
 /* Header with Close Icon */
 .create-box-header {
   display: flex;
-  
+
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
@@ -213,20 +217,20 @@ p{
 }
 
 .content-box {
-   width: 100%; /* parent ke andar fit ho jayega */
-  max-width: 600px; /* optional: blog card ka max width jaisa */
-  min-height: 150px; /* upar se neeche ka size fix karega */
+  width: 100%;
+  max-width: 600px;
+  min-height: 150px;
   resize: vertical; /* sirf height change ho sake */
   padding: 10px;
   height: 100px;
   resize: none;
 }
-#dateInp{
+#dateInp {
   cursor: pointer;
 }
 
 .file-input {
-    width: 100%;
+  width: 100%;
   background-color: transparent;
   color: #ccc;
   padding: 6px;
@@ -248,4 +252,3 @@ p{
 .create-confirm-btn:hover {
   background-color: #a97ffb;
 }
-

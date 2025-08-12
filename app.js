@@ -2,7 +2,7 @@ let users = JSON.parse(localStorage.getItem("usersdata")) || [];
 
 function signupfnc() {
   let signupName = document.getElementById("signupName").value;
-  let signupEmail = document.getElementById("signupEmail").value;
+  let signupEmail = document.getElementById("signupEmail").value.trim();
   let signupPassword = document.getElementById("signupPassword").value;
 
   if (signupName !== "" && signupEmail !== "" && signupPassword !== "") {
@@ -30,23 +30,30 @@ function signupfnc() {
 }
 
 function loginfnc() {
-  let loginEmail = document.getElementById("email").value;
-  let loginPassword = document.getElementById("password").value;
+  users = JSON.parse(localStorage.getItem("usersdata")) || [];
+  let loginEmail = document.getElementById("email").value.trim();
+  let loginPassword = document.getElementById("password").value.trim();
+
+
+  // for(let i = 0; i < users.length; i++){
+  //   if(loginEmail === users[i].signupEmail && loginPassword === users[i].signupPassword ){
+  //     alert("login successfully as");
+  //     window.location.href = "home.html";
+  //   }
+  // }
   let isCorrect = false;
   for (let i = 0; i < users.length; i++) {
     if (
       loginEmail === users[i].signupEmail &&
       loginPassword === users[i].signupPassword
     ) {
+      alert("Login Successfully");
+      window.location.href = "home.html";
       isCorrect = true;
-      break;
     }
   }
 
-  if (isCorrect) {
-    alert("Login Successfully");
-    window.location.href = "home.html";
-  } else {
+  if (isCorrect === false) {
     alert("Invalid Email or Password");
   }
 }
@@ -73,7 +80,7 @@ function createBlog() {
   let title_input = document.getElementById("titleInp").value;
   let content_input = document.getElementById("contentInp").value;
   let name_input = document.getElementById("nameInp").value;
-  let current_date = document.getElementById('dateInp').value;
+  let current_date = document.getElementById("dateInp").value;
 
   // when click on post the box will be ghayab
 
@@ -82,9 +89,7 @@ function createBlog() {
   let createBox = document.getElementById("createBox");
   createBox.style.display = "none";
   console.log("fire");
-  // end of click on post k upr 
-
-
+  // end of click on post k upr
 
   let blogPost = document.createElement("div");
   blogPost.setAttribute("class", "blogPost");
@@ -92,33 +97,27 @@ function createBlog() {
   main.append(blogPost);
 
   // blog section h1
-  let blogtittle = document.createElement('h2');
-  blogtittle.setAttribute('class','blog-title');
-  blogtittle.innerText= title_input;
+  let blogtittle = document.createElement("h2");
+  blogtittle.setAttribute("class", "blog-title");
+  blogtittle.innerText = title_input;
   blogPost.append(blogtittle);
 
-
-  
-// blog section p
-  let blogContent = document.createElement('p');
-  blogContent.setAttribute('class','blog-content');
-  blogContent.innerText= content_input;
+  // blog section p
+  let blogContent = document.createElement("p");
+  blogContent.setAttribute("class", "blog-content");
+  blogContent.innerText = content_input;
   blogPost.append(blogContent);
 
-
   // blog section author name
-  let authorName = document.createElement('author');
-  authorName.setAttribute('class','author');
-  authorName.innerText= name_input;
+  let authorName = document.createElement("author");
+  authorName.setAttribute("class", "author");
+  authorName.innerText = name_input;
   blogPost.append(authorName);
-
 
   // blog section date
 
-  let blogDate = document.createElement('dateInp');
-  blogDate.setAttribute('class','date');
+  let blogDate = document.createElement("dateInp");
+  blogDate.setAttribute("class", "date");
   blogDate.innerText = current_date;
-  blogPost.append(blogDate)
+  blogPost.append(blogDate);
 }
-
-
