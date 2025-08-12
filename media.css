@@ -13,6 +13,7 @@
 
   }
   form{
+    width: 90%;
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
@@ -52,32 +53,34 @@
 @media screen and (min-width: 300px) and (max-width:750px){
 
     header{
-        height: 80px;
+        height: 100px;
     }
     .logo{
-        font-size: 25px;
+        font-size: 40px;
     }
     .signout{
-        width: 100%;
+        display: none;
+        width: 180px;
+
         font-size: 100%;
         font-weight: 700;
         border-width: 0px ;
     }
     .create-btn {
-        width: 50%;
+        width: 100%;
         font-size: 100%;
         font-weight: 700;
     }
     .blogPost{
-        width: 90%;
+        width: 100%;
 
     }
     .blogPost .blog-title{
-        font-size: 100%;
+        font-size: 30px;
         font-weight: bold;
     }
     .blogPost .blog-content{
-        font-size: 90%;
+        font-size: 100%;
         font-weight: 500;
     }
     .blogPost .blog-info{
@@ -85,14 +88,14 @@
         flex-wrap: wrap;
     }
     .blogPost .author{
-        font-size: 100%;
+        font-size: 18px;
         font-weight: 500;
     }
     .blogPost .date{
-        font-size: 100%;
+        font-size: 18px;
         font-weight: 400;
     }
     .create-blog-box{
-        width: 85%;
+        width: 100%;
     }
 }

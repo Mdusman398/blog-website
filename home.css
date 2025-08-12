@@ -188,6 +188,9 @@ p {
   align-items: center;
   margin-bottom: 20px;
 }
+.create-blog-box{
+  width: 100%;
+}
 
 .create-box-header h2 {
   color: #bb86fc;
