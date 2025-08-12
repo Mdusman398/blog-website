@@ -1,4 +1,4 @@
-@media (min-width: 300px) and (max-width:750px){
+@media (min-width: 250px) and (max-width:750px){
 
   .container{
     width: 85%;
@@ -50,7 +50,7 @@
 /* home page responsive design  */
 
 
-@media screen and (min-width: 300px) and (max-width:750px){
+@media screen and (min-width: 250px) and (max-width:750px){
 
     header{
         height: 100px;
