@@ -89,6 +89,7 @@ header {
 }
 
 .blogPost {
+  /* display: none; */
   margin-top: 20%;
   background-color: #2b2b3c;
   padding: 30px;
@@ -255,3 +256,7 @@ p {
 .create-confirm-btn:hover {
   background-color: #a97ffb;
 }
+
+
+
+

@@ -82,7 +82,7 @@ body {
 
 }
 
-form input {
+.form input {
   width: 90%;
   height: 40px;
   padding: 10px 10px 10px 30px ;
@@ -108,8 +108,8 @@ form input {
   height: 50px;
   padding: 12px;
   /* text-align: center; */
-  margin-left: 100px;
-  margin-top: 30px;
+  margin-left: 80px;
+  margin-top: 20px;
   background-color: #a68cff;
   color: white;
   border: none;

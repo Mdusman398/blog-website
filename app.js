@@ -83,6 +83,14 @@ function createBlog() {
   let current_date = document.getElementById("dateInp").value;
 
   // when click on post the box will be ghayab
+  // let blogSection = document.getElementById('blogSec');
+  // blogSection.style.display = 'flex';
+  // blogSection.style.flexDirection = "column";
+  // alert('blog succefully posted')
+  
+
+
+
 
   let blogContainer = document.getElementById("blog-container");
   blogContainer.style.display = "none";
